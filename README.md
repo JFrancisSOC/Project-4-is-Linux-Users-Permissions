@@ -51,7 +51,7 @@
 
 ## Screenshots
 
-- ![Verifying Current Users and Directory](screenshots/Project4/01%20Verifying%20Current%20Users%20and%20Directory.png)
+- ![Verifying Current Users and Directory](screenshots/Project%204%20Linux%20Users%20&%20Permissions/01%20Verifying%20Current%20Users%20and%20Directory.png)
 - ![Analyzing Linux File Ownership](screenshots/Project4/02%20Analyzing%20Linux%20File%20Ownership.png)
 - ![Understanding Linux File Permissions](screenshots/Project4/03%20Understanding%20Linux%20File%20Permissions.png)
 - ![Creating a Practice File](screenshots/Project4/04%20Mission4.txt.png)
