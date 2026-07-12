@@ -2,8 +2,8 @@
 
 ## Objective
 
-- Learn how Linux controls access to files through users, groups, ownership, and permissions.
-- Practice viewing and changing permissions while following the Principle of Least Privilege.
+- Understand and practice Linux file ownership and permission settings.
+- Learn to navigate user accounts, directories, and modify permissions using commands.
 
 ---
 
@@ -17,93 +17,61 @@
 
 ## Skills Practiced
 
-- Identifying the current Linux user
-- Viewing the current directory
-- Reading Linux permission strings
-- Checking file ownership
-- Creating practice files
-- Changing permissions with `chmod`
-- Understanding ownership with `chown`
+- Verifying current users and directories
+- Analyzing Linux file ownership
+- Understanding file permission concepts
+- Modifying permissions with `chmod`
 - Using `sudo` for administrative tasks
-- Applying the Principle of Least Privilege
 
 ---
 
 ## Linux Commands Used
 
-| Command | Purpose |
-|---|---|
-| `whoami` | Show the current logged-in user |
-| `pwd` | Show the current working directory |
-| `ls -l` | View file ownership and permissions |
-| `ls -la` | View all files, including hidden files |
-| `touch mission4.txt` | Create a practice file |
-| `chmod a-w mission4.txt` | Remove write access from all users |
-| `chmod u+x mission4.txt` | Add execute permission for the owner |
-| `chown` | Change file ownership |
-| `sudo` | Run a command with administrative privileges |
+| Command                              | Purpose                                              |
+| ------------------------------------ | ---------------------------------------------------- |
+| `id`                                 | Display user ID and group membership                  |
+| `ls -l`                              | List files with detailed permissions                 |
+| `chmod`                              | Change file permissions                              |
+| `chown`                              | Change file ownership                                |
+| `sudo`                               | Execute command as superuser                         |
+| `pwd`                                | Show current directory                               |
 
 ---
 
 ## Lab Activities
 
-- Verified the current Linux user and working directory.
-- Reviewed file ownership and permission information.
-- Learned how permissions are divided between the owner, group, and others.
-- Created a practice file for permission testing.
-- Removed write access from all users.
-- Added execute permission for the file owner.
-- Reviewed how ownership is displayed in Linux.
-- Used `sudo` to complete an administrative task.
-- Reviewed why unrestricted permissions can create a security risk.
+- Verified current users and directories using `id` and `pwd`.
+- Analyzed file ownership by listing files with `ls -l`.
+- Created a practice file to experiment with permission changes.
+- Modified file permissions with `chmod` to test different access levels.
+- Used `sudo` to perform administrative tasks on system files.
+- Examined how ownership changes impacted access rights.
 
 ---
 
 ## Screenshots
 
-### 01 – Verifying Current Users and Directory
-
-![Verifying Current Users and Directory](screenshots/Project4/01 Verifying Current Users and Directory.png)
-
-### 02 – Analyzing Linux File Ownership
-
-![Analyzing Linux File Ownership](screenshots/Project4/02 Analyzing Linux File Ownership.png)
-
-### 03 – Understanding Linux File Permissions
-
-![Understanding Linux File Permissions](screenshots/Project4/03 Understanding Linux File Permissions.png)
-
-### 04 – Creating a Practice File
-
-![Creating a Practice File](screenshots/Project4/04 Mission4.txt.png)
-
-### 05 – Modifying Linux File Permissions with chmod
-
-![Modifying Linux File Permissions with chmod](screenshots/Project4/05 Modifying Linux File Permissions With chmod.png)
-
-### 06 – Examining Linux File Ownership
-
-![Examining Linux File Ownership](screenshots/Project4/06 Examining Linux File Ownership.png)
-
-### 07 – Using sudo for Administrative Tasks
-
-![Using sudo for Administrative Tasks](screenshots/Project4/7 Using sudo for Administrative Tasks.png)
+- ![Verifying Current Users and Directory](screenshots/Project4/01%20Verifying%20Current%20Users%20and%20Directory.png)
+- ![Analyzing Linux File Ownership](screenshots/Project4/02%20Analyzing%20Linux%20File%20Ownership.png)
+- ![Understanding Linux File Permissions](screenshots/Project4/03%20Understanding%20Linux%20File%20Permissions.png)
+- ![Creating a Practice File](screenshots/Project4/04%20Mission4.txt.png)
+- ![Modifying Linux File Permissions with chmod](screenshots/Project4/05%20Modifying%20Linux%20File%20Permissions%20With%20chmod.png)
+- ![Examining Linux File Ownership](screenshots/Project4/06%20Examining%20Linux%20File%20Ownership.png)
+- ![Using sudo for Administrative Tasks](screenshots/Project4/07%20Using%20sudo%20for%20Administrative%20Tasks.png)
 
 ---
 
 ## Lessons Learned
+
 - I learned how to read Linux permission strings and understand what access each user group has.
-- I practiced changing permissions with `chmod` and checking the results with `ls -l`.
-- I learned the difference between file permissions and file ownership.
-- I learned why administrative access should only be used when it is needed.
-- I became more comfortable recognizing permission settings that could create a security risk.
+- I practiced using `chmod` to adjust file permissions and observed how those changes affect who can read, write, or execute files.
+- I became more confident using `sudo` to carry out administrative tasks on files that require elevated privileges.
+- Understanding file ownership and permissions is crucial for securing Linux environments and ensuring only authorized users have appropriate access.
 
 ---
 
 ## SOC Analyst Takeaways
 
-- File permissions can help an analyst determine who is allowed to read, change, or execute a file.
-- Permissions such as `rwxrwxrwx` are risky because every user has full access.
-- Unexpected ownership or permission changes should be reviewed to determine who made the change and whether it was authorized.
-- The Principle of Least Privilege limits access and reduces the damage caused by mistakes or compromised accounts.
-  
+- As a SOC analyst, knowing how permissions work helps when reviewing system logs and ensuring that sensitive files are protected.
+- Regularly verifying file ownership and permission settings is a good practice to prevent unauthorized access or accidental modifications.
+- Linux file permissions are a core element of system security, and mastering them is key to maintaining a secure operating environment.
