@@ -1,86 +1,80 @@
-# Project 4 – Linux Users & Permissions
+# Project 4 – Windows Log Analysis
 
 ## Objective
 
-* Develop practical Linux access control skills used by Security Operations Center (SOC) analysts by viewing, interpreting, and modifying Linux file ownership and permissions within an Ubuntu virtual machine.
+In this project, I’ll practice analyzing Windows event logs to identify key security events. I’ll focus on reviewing logon attempts, system details, and suspicious activity from the Event Viewer, which is a crucial skill for a SOC analyst working in a Windows environment.
 
 ---
 
 ## Environment
 
-* Ubuntu Desktop LTS
-* Oracle VirtualBox
-* Bash Terminal
+- Windows 10 Pro
+- Event Viewer
+- PowerShell
+- Desktop Environment
 
 ---
 
 ## Skills Practiced
 
-* Identifying Linux users
-* Viewing the current working directory
-* Examining Linux file ownership
-* Interpreting Linux file permissions
-* Creating files using `touch`
-* Modifying file permissions using `chmod`
-* Understanding file ownership using `chown`
-* Using `sudo` for administrative tasks
-* Applying the Principle of Least Privilege
+- Navigating Windows Event Viewer
+- Filtering and searching for logon events
+- Identifying failed and successful logins
+- Reviewing system resource usage
+- Using PowerShell to gather event data
+- Understanding Windows Security logs for SOC analysis
 
 ---
 
-## Linux Commands Used
+## Commands and Tools Used
 
-| Command                              | Purpose                                       |
-| ------------------------------------ | --------------------------------------------- |
-| `whoami`                             | Display the current logged-in user            |
-| `pwd`                                | Display the current working directory         |
-| `ls -l`                              | Display file ownership and permissions        |
-| `ls -la`                             | Display all files, including hidden files     |
-| `touch mission4.txt`                 | Create a new file                             |
-| `chmod a-w mission4.txt`             | Remove write permissions from all users       |
-| `chmod u+x mission4.txt`             | Add execute permission for the file owner     |
-| `sudo touch /tmp/mission4-admin.txt` | Create a file using administrative privileges |
+| Command/Tool               | Purpose                                                 |
+| -------------------------- | ------------------------------------------------------- |
+| Event Viewer               | Review Windows security, logon, and system logs          |
+| PowerShell `Get-EventLog`  | Retrieve event log data for automation and review        |
+| Filter by Event ID 4625    | Identify failed logon attempts                           |
+| Filter by Event ID 4624    | Identify successful logon attempts                       |
+| Resource Monitor           | Check CPU, memory, and disk usage                        |
 
 ---
 
 ## Lab Activities
 
-* Verified the current Linux user account.
-* Verified the current working directory.
-* Examined Linux file ownership and permissions.
-* Identified Owner, Group, and Others permission assignments.
-* Created a practice file for permission testing.
-* Modified file permissions using the `chmod` command.
-* Reviewed file ownership using the `ls -l` command.
-* Used `sudo` to perform an administrative task.
-* Applied the Principle of Least Privilege to Linux access control.
-* Reviewed a simulated file permission scenario to identify potential security risks.
+- Opened Windows Event Viewer and explored the security logs.
+- Filtered event logs to isolate logon attempts (Event IDs 4624 for success, 4625 for failure).
+- Used PowerShell to pull event data for further inspection.
+- Reviewed system resource usage via Resource Monitor.
+- Created a log review workspace to record findings.
+- Documented all suspicious or abnormal activities for follow-up.
 
 ---
 
 ## Screenshots
 
-* P4 01 Verifying Current User and Working Directory
-* P4 02 Viewing File Ownership
-* P4 03 Understanding Linux File Permissions
-* P4 04 Creating a Practice File
-* P4 05 Modifying File Permissions with chmod
-* P4 06 Reviewing File Ownership
-* P4 07 Using sudo for Administrative Tasks
+- 01 – Logon Events Overview  
+  ![Logon Events Overview](screenshots/Project4/01-Logon-Events-Overview.png)
+
+- 02 – Viewing Failed Logons  
+  ![Viewing Failed Logons](screenshots/Project4/02-Viewing-Failed-Logons.png)
+
+- 03 – Successful Logon Details  
+  ![Successful Logon Details](screenshots/Project4/03-Successful-Logon-Details.png)
+
+- 04 – System Resource Usage  
+  ![System Resource Usage](screenshots/Project4/04-System-Resource-Usage.png)
 
 ---
 
 ## Lessons Learned
 
-* I learned how Linux controls access to files through users, groups, ownership, and permissions.
-* I practiced using `chmod` to modify file permissions and verified the changes using the `ls -l` command.
-* I learned how administrative privileges are temporarily granted using `sudo`.
-* I learned that applying the Principle of Least Privilege helps reduce unnecessary security risks.
+- I learned how to identify both successful and failed logon attempts using Windows Event Viewer.
+- I became more comfortable filtering event logs to find security-relevant events.
+- I realized the importance of correlating logon attempts with system resource usage to spot anomalies.
 
 ---
 
 ## SOC Analyst Takeaways
 
-* File ownership and permissions are important indicators during Linux security investigations.
-* Reviewing file permissions helps identify unauthorized access and potential privilege escalation.
-* Applying the Principle of Least Privilege helps reduce the attack surface and strengthens overall system security.
+- In a SOC environment, Windows log analysis is critical for detecting intrusions and monitoring user behavior.
+- Knowing how to navigate Event Viewer and filter by logon events helps pinpoint suspicious access patterns.
+- Combining log data with resource monitoring can reveal potential misuse or performance issues tied to security incidents.
