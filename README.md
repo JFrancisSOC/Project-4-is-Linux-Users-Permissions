@@ -54,22 +54,22 @@
 ### 01 – Verifying Current Users and Directory
 ![Verifying Current Users and Directory](01%20Verifying%20Current%20Users%20and%20Directory.png)
 -
--### 02 – Analyzing Linux File Ownership
+### 02 – Analyzing Linux File Ownership
 ![Analyzing Linux File Ownership](02%20Analyzing%20Linux%20File%20Ownership.png)
 
 ### 03 – Understanding Linux File Permissions
 ![Understanding Linux File Permissions](03%20Understanding%20Linux%20File%20Permissions.png)
 -
--### 04 – Creating a Practice File
+### 04 – Creating a Practice File
 ![Creating a Practice File](04%20Mission4.txt.png)
 
 ### 05 – Modifying Linux File Permissions with chmod
 ![Modifying Linux File Permissions with chmod](05%20Modifying%20Linux%20File%20Permissions%20With%20chmod.png)
 -
--### 06 – Examining Linux File Ownership
-- ![Examining Linux File Ownership](06%20Examining%20Linux%20File%20Ownership.png)
+### 06 – Examining Linux File Ownership
+![Examining Linux File Ownership](06%20Examining%20Linux%20File%20Ownership.png)
 
-- ### 07 – Using sudo for Administrative Tasks
+### 07 – Using sudo for Administrative Tasks
 ![Using sudo for Administrative Tasks](07%20Using%20sudo%20for%20Administrative%20Tasks.png)
 
 ---
