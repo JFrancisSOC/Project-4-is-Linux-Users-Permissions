@@ -61,38 +61,37 @@
 
 ## Screenshots
 
-### 01 – Verifying Current User and Working Directory
+### 01 – Verifying Current Users and Directory
 
-![Verifying Current User and Working Directory](01%20Verifying%20Current%20User%20and%20Working%20Directory.png)
+![Verifying Current Users and Directory](screenshots/Project4/01 Verifying Current Users and Directory.png)
 
-### 02 – Viewing File Ownership
+### 02 – Analyzing Linux File Ownership
 
-![Viewing File Ownership](02%20Viewing%20File%20Ownership.png)
+![Analyzing Linux File Ownership](screenshots/Project4/02 Analyzing Linux File Ownership.png)
 
 ### 03 – Understanding Linux File Permissions
 
-![Understanding Linux File Permissions](03%20Understanding%20Linux%20File%20Permissions.png)
+![Understanding Linux File Permissions](screenshots/Project4/03 Understanding Linux File Permissions.png)
 
 ### 04 – Creating a Practice File
 
-![Creating a Practice File](04%20Creating%20a%20Practice%20File.png)
+![Creating a Practice File](screenshots/Project4/04 Mission4.txt.png)
 
-### 05 – Modifying File Permissions with chmod
+### 05 – Modifying Linux File Permissions with chmod
 
-![Modifying File Permissions with chmod](05%20Modifying%20File%20Permissions%20with%20chmod.png)
+![Modifying Linux File Permissions with chmod](screenshots/Project4/05 Modifying Linux File Permissions With chmod.png)
 
-### 06 – Reviewing File Ownership
+### 06 – Examining Linux File Ownership
 
-![Reviewing File Ownership](06%20Reviewing%20File%20Ownership.png)
+![Examining Linux File Ownership](screenshots/Project4/06 Examining Linux File Ownership.png)
 
 ### 07 – Using sudo for Administrative Tasks
 
-![Using sudo for Administrative Tasks](07%20Using%20sudo%20for%20Administrative%20Tasks.png)
+![Using sudo for Administrative Tasks](screenshots/Project4/7 Using sudo for Administrative Tasks.png)
 
 ---
 
 ## Lessons Learned
-
 - I learned how to read Linux permission strings and understand what access each user group has.
 - I practiced changing permissions with `chmod` and checking the results with `ls -l`.
 - I learned the difference between file permissions and file ownership.
@@ -107,3 +106,4 @@
 - Permissions such as `rwxrwxrwx` are risky because every user has full access.
 - Unexpected ownership or permission changes should be reviewed to determine who made the change and whether it was authorized.
 - The Principle of Least Privilege limits access and reduces the damage caused by mistakes or compromised accounts.
+  
